@@ -1,0 +1,168 @@
+/* Reset some default browser styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .navmenu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    margin-right: auto;
+    padding-left: 20px;
+}
+header .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links a {
+    
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header .nav-links a:hover {
+    background: #575757;
+}
+
+.hero {
+    color: white;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    background: #3A01CB;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
+aside {
+    flex: 0 0 200px;
+    margin-right: 20px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    background: #ddd;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside ul li a:hover {
+    color: #000;
+}
+
+main h3 {
+    color: #333;
+}
+blockquote
+{
+    border-left: none;
+}
+.grid {
+    margin-bottom: 50px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px;
+}
+
+section {
+    padding: 10px;
+    font-size: small;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+section a{
+    color: #000;
+    text-decoration: none;
+}
+#categories ul {
+    display: flex;
+    gap: 10px;
+}
+
+#categories ul li {
+    background: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#categories ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#categories ul li a:hover {
+    color: #000;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+}
+footer .nav_menu h3{
+    color: #fff;
+    padding: 10px;
+
+}
+    /* Media Queries */
+    @media (min-width: 768px) {
+        .container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .header, .content, .footer {
+            width: 48%;
+            margin: 1%;
+        }
+    }
+    @media (min-width: 1024px) {
+        .header, .content, .footer {
+            width: 30%;
+        }
+    }
