@@ -1,4 +1,3 @@
-# Technology Blog
 
 # Technology Blog
 
